@@ -285,7 +285,7 @@ where
 			sybil_resistance_level: CollatorSybilResistance::Resistant, // because of Aura
 		})
 		.await?;
-
+log::warn!("parachain_config:{:?}", parachain_config);
 	if parachain_config.offchain_worker.enabled {
 		use futures::FutureExt;
 
